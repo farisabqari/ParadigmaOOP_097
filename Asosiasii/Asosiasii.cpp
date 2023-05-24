@@ -18,5 +18,21 @@ public:
 	void tambahDokter(dokter*);
 	void cetakDokter();
 };
+class dokter {
+public:
+	string nama;
+	vector<pasien*>  daftar_pasien;
+
+	dokter(string pNama) :nama(pNama) {
+
+	}
+	~dokter() {
+		cout << "Dokter \"" << nama << "\" ada \n";
+	~dokter() {
+		cout << "Dokter \"" << nama << "\" tidak ada\";
+	}
+	void tambahPasien(pasien*);
+	void cetakPasien();
+};
 
  
